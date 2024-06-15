@@ -281,6 +281,18 @@ body {
 }
 
 
+/* Couleur de fond du bouton "Envoyer" */
+.btn-success {
+    background-color: #687A61; /* Couleur de fond */
+    border-color: #687A61; /* Couleur de la bordure */
+}
+
+/* Couleur du bouton "Envoyer" au survol */
+.btn-success:hover {
+    background-color: #859C7A; /* Couleur de fond au survol */
+    border: 1px solid #433633; /* Bordure */
+}
+
 .btn-close {
     background-color: transparent!important; /* Couleur de fond transparente */
     border: none!important; /* Pas de bordure */

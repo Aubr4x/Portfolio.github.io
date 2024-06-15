@@ -141,24 +141,61 @@
 		
 		<div class="container">
 			<button type="button" class="block1 btn btn-primary1" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-				<h5> Projet N°1 </h5>
+				<h5> Universitaires </h5>
 				<p> - </p>
-				<p> <i> "Enquête sur l’empreinte écologique de l’IUT" </i> </p>
+				<p> <i> "BUT Science des <br> Données - 1ère Année" </i> </p>
 				
 			</button>
 
-			<!-- Modal 1 -->
+			<!-- Modal 2 -->
 			<div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
 				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Projet N°1 </b> </h1>
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> BUT Science des Données - 1ère Année </b> </h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div id="carouselExampleDark1" class="carousel carousel-dark slide">
+							<div class="carousel-indicators">
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							</div>
+							<div class="carousel-inner" style="margin: 30px 0px 100px 0px;">
+								<div class="carousel-item active" data-bs-toggle="modal" data-bs-target="#staticBackdrop1.1">
+									<p style="margin-bottom: 25px;"> <b> Projet N°1 : <br> </b> <i> "Mise en œuvre d'une enquête à l'IUT" </i> </p>
+									<img src="image/enquete.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+								<div class="carousel-item">
+									<p style="margin-bottom: 25px;"> <b> Projet N°X : <br> </b> <i> "Détails du projet prochainement" </i> </p>
+									<img src="image/non.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="modal fade" id="staticBackdrop1.1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Projet : "Mise en œuvre d'une enquête à l'IUT" </b> </h1>
 							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
 						<div class="modal-body" style="text-align: justify; margin: 25px 50px;">
 							<!-- Contenu du modal -->
 							<p> <b> Contextualisation : </b> </p>
-							<p> Notre projet consistait à mener une enquête par sondage axée sur la thématique de l'écologie.
+							<p> Afin de prendre conscience d'un thème majeur et d'actualité dans le monde autour d'un projet statistique, 
+							notre travail consistait à mener une enquête par sondage axée sur la thématique de l'écologie à l'IUT.
 							Pour cela, nous avons élaboré un questionnaire complet et strict, couvrant un large éventail de sujets.
 							Ce questionnaire comportait différentes formulations de questions et de réponses pour garantir une collecte d'informations exhaustive.
 							Une fois les réponses collectées, il fallait procéder au nettoyage de la base de données afin de préparer les données pour des analyses statistiques approfondies et de qualité. 
@@ -188,7 +225,7 @@
 							</div>
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-success" onclick="window.location.href='SAE Enquête (Statuts).pdf';"> <i> Rapport Final </i> </button>
+							<button type="button" class="btn btn-success" onclick="window.open('SAE Enquête (Statuts).pdf', '_blank');"> <i> Rapport Final </i> </button>
 						</div>
 					</div>
 				</div>
@@ -196,17 +233,54 @@
 
 
 			<button type="button" class="block2 btn btn-primary2" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-				<h5> Projet N°2 </h5>
+				<h5> Professionnels </h5>
 				<p> - </p>
-				<p> <i> "Mise en forme d'une base <br> de données sociales" </i> </p>
+				<p> <i> "Direction Générale de l'Administration et de <br> la Fonction Publique" </i> </p>
 			</button>
 
-			<!-- Modal 3 -->
-			<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+			<!-- Modal 2 -->
+			<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
 				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Projet N°2 </b> </h1>
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Direction Générale de l'Administration et de la Fonction Publique </b> </h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div id="carouselExampleDark2" class="carousel carousel-dark slide">
+							<div class="carousel-indicators">
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							</div>
+							<div class="carousel-inner" style="margin: 30px 0px 100px 0px;">
+								<!-- Contenu du carrousel -->
+								<div class="carousel-item active" data-bs-toggle="modal" data-bs-target="#staticBackdrop2.1">
+									<p style="margin-bottom: 25px;"> <b> Projet N°1 : <br> </b> <i> "Mise en forme d'une base de données sociales" </i> </p>
+									<img src="image/bds.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+								<div class="carousel-item">
+									<p style="margin-bottom: 25px;"> <b> Projet N°X : <br> </b> <i> "Détails du projet prochainement" </i> </p>
+									<img src="image/non.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="modal fade" id="staticBackdrop2.1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Projet : "Mise en forme d'une base de données sociales" </b> </h1>
 							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
 						<div class="modal-body" style="text-align: justify; margin: 25px 50px;">
@@ -246,10 +320,14 @@
 				</div>
 			</div>
 
+
+
+
+
 			<button type="button" class="block3 btn btn-primary3" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
-				<h5> Projet N°3 </h5>
+				<h5> Universitaires </h5>
 				<p> - </p>
-				<p> <i> "Description et prévision de séries temporelles" </i> </p>
+				<p> <i> "BUT Science des <br> Données - 2ème Année" </i> </p>
 			</button>
 
 			<!-- Modal 3 -->
@@ -257,8 +335,60 @@
 				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Projet N°3 </b> </h1>
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> BUT Science des Données - 2ème Année </b> </h1>
 							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div id="carouselExampleDark3" class="carousel carousel-dark slide">
+							<div class="carousel-indicators">
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+							</div>
+							<div class="carousel-inner" style="margin: 30px 0px 100px 0px;">
+								<!-- Contenu du carrousel -->
+								<div class="carousel-item active" data-bs-toggle="modal" data-bs-target="#staticBackdrop3.1">
+									<p style="margin-bottom: 25px;"> <b> Projet N°1 : <br> </b> <i> "Description et prévision d'une série temporelle" </i> </p>
+									<img src="image/energie.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+								<div class="carousel-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop3.2">
+									<p style="margin-bottom: 25px;"> <b> Projet N°2 : <br> </b> <i> "Intégration de données dans un datawarehouse" </i> </p>
+									<img src="image/livre.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+								<div class="carousel-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop3.3">
+									<p style="margin-bottom: 25px;"> <b> Projet N°3 : <br> </b> <i> "Collecte automatisée de données web" </i> </p>
+									<img src="image/collecte.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+								<div class="carousel-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop3.4">
+									<p style="margin-bottom: 25px;"> <b> Projet N°4 : <br> </b> <i> "Développement d'un composant d'une solution décisionnelle" </i> </p>
+									<img src="image/ratp.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+								<div class="carousel-item">
+									<p style="margin-bottom: 25px;"> <b> Projet N°X : <br> </b> <i> "Détails du projet prochainement" </i> </p>
+									<img src="image/non.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark3" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark3" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="modal fade" id="staticBackdrop3.1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel4" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Projet : "Description et prévision d'une série temporelle" </b> </h1>
+							<button type="button" class="btn btn-close" data-bs-toggle="modal" aria-label="Close"></button>
 						</div>
 						<div class="modal-body" style="text-align: justify; margin: 25px 50px;">
 							<!-- Contenu du modal -->
@@ -297,7 +427,167 @@
 							</div>
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-success" onclick="window.location.href='SAE_Séries_Temporelles_TIVRIER_BELAID.pdf';"> <i> Rapport Final </i> </button>
+							<button type="button" class="btn btn-success" onclick="window.open('SAE_Séries_Temporelles_TIVRIER_BELAID.pdf', '_blank');"> <i> Rapport Final </i> </button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="modal fade" id="staticBackdrop3.2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel4" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Projet : "Intégration de données dans un datawarehouse" </b> </h1>
+							<button type="button" class="btn btn-close" data-bs-toggle="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body" style="text-align: justify; margin: 25px 50px;">
+							<!-- Contenu du modal -->
+							<p> <b> Contextualisation : </b> </p>
+							<p> Nil, une entreprise française spécialisée dans le e-commerce de livres, se distingue par sa passion pour la lecture et son innovation technologique.
+							Sollicités par cette société, nous avons mis en place un système d'analyse approfondie du comportement des utilisateurs sur leur plateforme.
+							Cette initiative a pour but de fournir des indicateurs pertinents sur la navigation des clients, les pages et catégories les plus consultées,
+							le détail des commandes et des livraisons, ainsi que les taux de conversion. L'objectif est d'optimiser l'expérience client et de prendre des décisions
+							éclairées pour soutenir la croissance continue de l'entreprise dans le secteur du e-commerce de livres.
+							Pour ce projet, nous avons développé un code informatique sous RStudio, comprenant plusieurs livrables pour créer un data warehouse et y insérer des données.
+							Cela nous a permis de répondre à diverses interrogations via des requêtes SQL. Nous avons également conçu une maquette de reporting à utiliser de manière hebdomadaire
+							pour assurer un suivi et un historique de tous les KPI clés essentiels au développement du site. Enfin, nous avons rédigé un rapport détaillant chaque étape de notre travail. </p>
+							<p> <br> </p>
+							<p> <b> Défis et Difficultés : </b> </p>
+							<p> Nous n'avons pas rencontré de véritables difficultés pour entreprendre ce projet, le plus difficile a été de réfléchir aux choix pertinents à retenir pour faire progresser nos travaux.
+							La conception du modèle conceptuel de données (MCD) a représenté une épreuve majeure, car il fallait créer une structure cohérente et extensible
+							qui puisse répondre à tous les besoins de l'analyse tout en étant suffisamment flexible pour intégrer de nouvelles sources de données à l'avenir.
+							Par ailleurs, l'analyse du comportement des utilisateurs a nécessité une compréhension approfondie des métriques pertinentes et la capacité de traduire ces analyses
+							en recommandations concrètes pour améliorer l'expérience client. Enfin, la conception de la maquette de reporting hebdomadaire a demandé une attention particulière aux
+							détails pour s'assurer que tous les KPI clés soient bien représentés et facilement interprétables par l'équipe de Nil. Ce projet m'a permis de développer des compétences
+							précieuses en gestion de données, en analyse et en communication, malgré les nombreux défis rencontrés. </p>
+							<p> <br> </p>
+							<p> <b> Apprentissages Critiques : </b> </p>
+							<ul>
+								<li> Prendre conscience de la rigueur requise dans ses productions et dans la communication à leur propos </li>
+								<li> Saisir la nécessité de choisir des indicateurs pertinents pour communiquer sur les résultats </li>
+								<li> Réaliser le rôle central et spécifique de l’entrepôt de données dans la chaine décisionnelle </li>
+								<li> Comprendre la nécessité de tester, corriger et documenter un programme </li>
+							</ul>
+							<p> <br> </p>
+							<div class="location">
+							  <i class="fa fa-map-marker" aria-hidden="true"></i>
+							  <p> <i> IUT Paris - Rives de Seine, Paris 16ème <br> Décembre 2023 - Janvier 2024 </i> </p>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-success" onclick="window.open('SAE INTEGRATION DE DONNEES.pdf', '_blank');"> <i> Rapport Final </i> </button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="modal fade" id="staticBackdrop3.3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel4" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Projet : "Collecte automatisée de données web" </b> </h1>
+							<button type="button" class="btn btn-close" data-bs-toggle="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body" style="text-align: justify; margin: 25px 50px;">
+							<!-- Contenu du modal -->
+							<p> <b> Contextualisation : </b> </p>
+							<p> À partir de deux bases de données sources regroupant des informations sur des millions d'entreprises et leurs établissements en France (base SIREN),
+							notre projet vise à enrichir ces fichiers par une collecte complémentaire via le web. Nous nous concentrons principalement sur les coordonnées géographiques,
+							les sites web ou encore les numéros de téléphone, récupérés grâce à une recherche Google Maps des établissements. Pour cela, nous avons développé un code Python complet pour nettoyer
+							et structurer les fichiers sources de manière optimale. Une fois les fichiers structurés, nous utilisons une API pour récupérer les coordonnées géographiques de chaque établissement
+							à partir des adresses récoltées. Python communique avec les services de Google Maps via cette API pour obtenir les informations nécessaires. Avec ces coordonnées,
+							nous générons des liens URL Google Maps pour chaque établissement, ce qui nous permet d'accéder aux informations complémentaires. Ce processus nous permet de fournir
+							une valeur ajoutée significative en enrichissant les données initiales. Pour ce projet, nous avons utilisé Jupyter, un éditeur de code Python, pour combiner code,
+							commentaires et résultats en un seul endroit.</p>
+							<p> <br> </p>
+							<p> <b> Défis et Difficultés : </b> </p>
+							<p> Ce projet a présenté des défis significatifs nécessitant des solutions rapides pour éviter des retards dans notre travail.
+							Les fichiers sources étaient si volumineux que Jupyter ne pouvait pas les importer en une seule fois. Nous avons donc trouvé un moyen de découper minutieusement
+							les documents pour les importer et les fusionner sans problèmes. Une attention particulière a été portée à notre découpage, car les limitations de mémoire de Jupyter rendaient
+							parfois l'exécution du code impossible, et une erreur de découpe retardait notre progression. Des problèmes de mise en forme des données ont également surgi, faussant les
+							résultats en cours de projet. Pour y remédier, nous avons mis en place des contrôles réguliers des sections de code afin de vérifier leur bon fonctionnement et de corriger les
+							étapes présentant des erreurs. </p>
+							<p> <br> </p>
+							<p> <b> Apprentissages Critiques : </b> </p>
+							<ul>
+								<li> Comprendre l’intérêt des analyses multivariées pour synthétiser et résumer l’information portée par plusieurs variables </li>
+								<li> Prendre conscience de la rigueur requise dans ses productions et dans la communication à leur propos </li>
+								<li> Identifier et résoudre les problèmes d’intégration de sources complémentaires et hétérogènes </li>
+								<li> Percevoir les enjeux de l’automatisation et de l'interopérabilité d’un ensemble de tâches </li>
+								<li> Comprendre la nécessité de tester, corriger et documenter un programme </li>
+								<li> Apprécier l’intérêt de briques logicielles existantes et savoir les utiliser </li>
+								<li> Comprendre le cycle de vie d’un projet informatique </li>
+								<li> Savoir défendre ses choix d’analyses </li>
+							</ul>
+							<p> <br> </p>
+							<div class="location">
+							  <i class="fa fa-map-marker" aria-hidden="true"></i>
+							  <p> <i> IUT Paris - Rives de Seine, Paris 16ème <br> Janvier 2024 - Mars 2024 </i> </p>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-success" onclick="window.open('CODE 40 LIGNES TIVRIER GAVREL COADOU.html', '_blank');"> <i> Code Python </i> </button>
+							<button type="button" class="btn btn-success" onclick="window.open('Rapport SAE Collecte Web TIVRIER-GAVREL-COADOU.pdf', '_blank');"> <i> Rapport Final </i> </button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="modal fade" id="staticBackdrop3.4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel4" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Projet : "Développement d'un composant d'une solution décisionnelle" </b> </h1>
+							<button type="button" class="btn btn-close" data-bs-toggle="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body" style="text-align: justify; margin: 25px 50px;">
+							<!-- Contenu du modal -->
+							<p> <b> Contextualisation : </b> </p>
+							<p> Le parcours VCOD du BUT Science des Données offre une formation spécialisée dans la conception et l'exploitation de solutions d'informatique décisionnelle.
+							Il vise à doter les étudiants des compétences nécessaires pour développer et utiliser des outils décisionnels en intégrant des processus d'automatisation.
+							Ce faisant, ils sont capables de convertir les données brutes en informations exploitables pour soutenir efficacement la prise de décision. Dans le cadre de ce parcours,
+							nous sommes également confrontés à des projets concrets qui nous permettent d'appliquer nos connaissances dans des domaines spécifiques.
+							Par exemple, un projet récent dont nous avons sélectionné le thème a porté sur la conception d'un outil décisionnel dédié aux transports en commun en Île-de-France.
+							Utilisant RShiny, nous avons développé une application dynamique et interactive, en recueillant nous-mêmes les bases de données et les informations nécessaires à son élaboration.
+							Ce projet a abordé plusieurs aspects, notamment l'analyse historique des données, les statistiques sur la fréquentation des transports en commun,
+							ainsi que l'utilisation d'API pour calculer les informations sur le trafic et les trajets en Île-de-France. En mettant en œuvre ces compétences,
+							nous avons pu non seulement acquérir une expérience pratique précieuse, mais aussi démontrer notre capacité à visualiser et à communiquer efficacement les résultats de nos analyses. </p>
+							<p> <br> </p>
+							<p> <b> Défis et Difficultés : </b> </p>
+							<p> Ce projet a présenté des difficultés inattendues. Responsable de la partie statistique, j'ai rencontré des problèmes au fur et à mesure de mon avancement.
+							Tout d'abord, il m'a fallu trouver moi-même une base de données pertinente. Seules les données du métro étaient quasiment complètes, ce qui m'a contraint à abandonner
+							l'étude du trafic des autres transports en commun d'Île-de-France.
+							J'ai dû chercher plusieurs bases de données pour obtenir les informations que je souhaitais inclure. Regrouper ces bases en une seule s'est révélé parfois impossible en raison
+							de l'absence de clés de jointure. J'ai donc dû trouver des solutions pour combiner les bases avec des clés de jointure créées et gérer manuellement les autres données non fusionnables pour les faire correspondre au reste.
+							Une autre difficulté concernait l'association des filtres et des éléments graphiques. Par exemple, il fallait que je fasse correspondre les lignes de métro à leur couleur attribuée tout en appliquant un filtre dynamique
+							basé sur la sélection des utilisateurs. Cette tâche s'est avérée plutôt complexe.
+							Sachant que cela allait être compliqué, car c'était la première fois que je travaillais sur un code intégrant plusieurs facteurs dynamiques,
+							j'ai pris le temps de bien structurer les étapes de mon code et de les vérifier régulièrement pour m'assurer qu'aucune d'elles ne modifiait le contenu précédent. </p>
+							<p> <br> </p>
+							<p> <b> Apprentissages Critiques : </b> </p>
+							<ul>
+								<li> Comprendre le rôle fondamental de l’analyse des besoins et de l’existant dans un projet décisionnel (architecture, visualisation...) </li>
+								<li> Prendre conscience de la rigueur requise dans ses productions et dans la communication à leur propos </li>
+								<li> Prendre conscience des différences entre outils (logiciels, langages) pour choisir le plus adapté </li>
+								<li> Identifier et résoudre les problèmes d’intégration de sources complémentaires et hétérogènes </li>
+								<li> Saisir la nécessité de choisir des indicateurs pertinents pour communiquer sur les résultats </li>
+								<li> Percevoir les enjeux de l’automatisation et de l'interopérabilité d’un ensemble de tâches </li>
+								<li> Comprendre la nécessité de tester, corriger et documenter un programme </li>
+								<li> Savoir défendre ses choix d’analyses </li>
+							</ul>
+							<p> <br> </p>
+							<div class="location">
+							  <i class="fa fa-map-marker" aria-hidden="true"></i>
+							  <p> <i> IUT Paris - Rives de Seine, Paris 16ème <br> Mars 2024 - Juin 2024 </i> </p>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-success" onclick="window.open('shiny1.png', '_blank');"> <i> Image RShiny </i> </button>
 						</div>
 					</div>
 				</div>

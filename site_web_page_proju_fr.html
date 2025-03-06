@@ -1,0 +1,945 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> PORTFOLIO - BAPTISTE TIVRIER </title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css_bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css_site/site_web_page_proju.css">
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+	
+	<!-- ****************************** DEBUT BARRE DU MENU ****************************** -->
+		
+		<header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"> Accueil </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="site_web_page_presentation_fr.html">Présentation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="site_web_page_parcours_fr.html">Parcours</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="site_web_page_competences_fr.html">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+							<a class="nav-link  active" aria-current="page" href="#"> <b>Projets</b> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="site_web_page_contact_fr.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="CV_TIVRIER_BAPTISTE_fr.pdf" download="CV_TIVRIER_BAPTISTE_fr.pdf">
+                                CV <img src="image\download.png" alt="Download" class ="download"/>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Langues
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#" onclick="changeLanguage('fr')">
+										<img src="image\dr_fr.jpg" alt="Français" class="dr_fr"/>
+										Français
+									</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#" onclick="changeLanguage('en')">
+										<img src="image\dr_uk.jpg" alt="Anglais" class="dr_uk"/>
+										Anglais
+									</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        function changeLanguage(language) {
+			var currentPage = window.location.href;
+			var linksToModify = [
+				'site_web_page_presentation',
+				'site_web_page_parcours',
+				'site_web_page_proju',
+				'site_web_page_contact',
+				'CV_TIVRIER_BAPTISTE'
+			];
+
+			linksToModify.forEach(function(linkName) {
+				var link = document.querySelector('a[href="' + linkName + '_fr.html"]');
+				if (link) {
+					if (language === 'fr') {
+						link.setAttribute('href', linkName + '_fr.html');
+					} else if (language === 'en') {
+						link.setAttribute('href', linkName + '_en.html');
+					}
+				}
+			});
+			
+			linksToModify.forEach(function(linkName) {
+				var link = document.querySelector('a[href="' + linkName + '_fr.pdf"]');
+				if (link) {
+					if (language === 'fr') {
+						link.setAttribute('href', linkName + '_fr.html');
+					} else if (language === 'en') {
+						link.setAttribute('href', linkName + '_en.html');
+					}
+				}
+			});
+
+			// Modifier le lien de la page actuelle
+			if (language === 'fr') {
+				if (currentPage.includes('index_en.html')) {
+					window.location.href = currentPage.replace('index_en.html', 'index.html');
+				} else {
+					window.location.href = currentPage.replace('_en', '_fr');
+				}
+			} else if (language === 'en') {
+				if (currentPage.includes('index.html')) {
+					window.location.href = currentPage.replace('index.html', 'index_en.html');
+				} else {
+					window.location.href = currentPage.replace('_fr', '_en');
+				}
+			}
+		}
+    </script>
+		
+	<!-- ****************************** FIN BARRE DU MENU ****************************** -->
+
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		
+		<div class="titre">
+			<h1> PROJETS </h1>
+		</div>
+		
+		<img src="image\projet.png" alt="Projet" class="projet1"/>
+		
+		<img src="image\projet.png" alt="Projet" class="projet2"/>
+		
+		
+		
+		
+		
+		
+		<div class="container">
+			<button type="button" class="block1 btn btn-primary1" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+				<h5> Universitaires </h5>
+				<p> - </p>
+				<p> <i> "BUT Science des <br> Données - Projets <br> Généraux" </i> </p>
+				
+			</button>
+
+			<!-- Modal 2 -->
+			<div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> BUT Science des Données - Projets Généraux </b> </h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div id="carouselExampleDark1" class="carousel carousel-dark slide">
+							<div class="carousel-indicators">
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+							</div>
+							<div class="carousel-inner" style="margin: 30px 0px 100px 0px;">
+								<div class="carousel-item active" data-bs-toggle="modal" data-bs-target="#staticBackdrop1.1">
+									<p style="margin-bottom: 25px;"> <b> Projet N°1 (1ère Année) : <br> </b> <i> "Mise en œuvre d'une enquête à l'IUT" </i> </p>
+									<img src="image/enquete.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+								<div class="carousel-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop1.2">
+									<p style="margin-bottom: 25px;"> <b> Projet N°2 (2ème Année) : <br> </b> <i> "Description et prévision d'une série temporelle" </i> </p>
+									<img src="image/energie.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+								<div class="carousel-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop1.3">
+									<p style="margin-bottom: 25px;"> <b> Projet N°3 (2ème Année) : <br> </b> <i> "Intégration de données dans un datawarehouse" </i> </p>
+									<img src="image/livre.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+								<div class="carousel-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop1.4">
+									<p style="margin-bottom: 25px;"> <b> Projet N°4 (3ème Année) : <br> </b> <i> "Migration d’une base de données SQLite vers NoSQL" </i> </p>
+									<img src="image/voiture.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+								<div class="carousel-item">
+									<p style="margin-bottom: 25px;"> <b> Projet N°X : <br> </b> <i> "Détails du projet prochainement" </i> </p>
+									<img src="image/non.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="modal fade" id="staticBackdrop1.1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Projet : "Mise en œuvre d'une enquête à l'IUT" </b> </h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body" style="text-align: justify; margin: 25px 50px;">
+							<!-- Contenu du modal -->
+							<p> <b> Contextualisation : </b> </p>
+							<p> Afin de prendre conscience d'un thème majeur et d'actualité dans le monde autour d'un projet statistique, 
+							notre travail consistait à mener une enquête par sondage axée sur la thématique de l'écologie à l'IUT.
+							Pour cela, nous avons élaboré un questionnaire complet et strict, couvrant un large éventail de sujets.
+							Ce questionnaire comportait différentes formulations de questions et de réponses pour garantir une collecte d'informations exhaustive.
+							Une fois les réponses collectées, il fallait procéder au nettoyage de la base de données afin de préparer les données pour des analyses statistiques approfondies et de qualité. 
+							Pour cette enquête, il fallait utiliser des logiciels tels que LimeSurvey, spécialisé dans la création et la diffusion d'enquêtes pour transmettre le questionnaire aux participants,
+							Excel pour effectuer ces analyses et exploitations statistiques et PowerPoint pour présenter les résultats de manière claire et visuelle. </p>
+							<p> <br> </p>
+							<p> <b> Défis et Difficultés : </b> </p>
+							<p> Ce projet a représenté un défi de taille pour nous en début de formation.
+							La création du questionnaire a été particulièrement complexe. Nous devions concevoir au moins 30 questions variées, de types différents, tout en veillant à ce qu'elles soient claires,
+							concises et accessibles à tous les répondants, sans créer de confusion ni de biais. Cela a nécessité une réflexion approfondie et une remise en question constante de la pertinence de nos questions.
+							Un autre défi majeur a été le nettoyage de la base de données. Pour beaucoup d'entre nous, c'était une première expérience,
+							et formater un fichier Excel contenant des centaines de lignes pouvait sembler intimidant. Nous avons donc décidé de répartir les tâches entre nous,
+							en nous concentrant chacun sur une partie spécifique du nettoyage de la base de données, après avoir discuté ensemble de la meilleure approche à adopter. </p>
+							<p> <br> </p>
+							<p> <b> Apprentissages Critiques : </b> </p>
+							<ul>
+								
+								<li>Mesurer l’importance d’une expression précise et nuancée dans la communication en français et dans une langue étrangère des résultats</li>
+								<li>Lors de la restitution des résultats, mesurer l’importance d’expliciter également la démarche suivie</li>
+								<li>Prendre connaissance des biais rencontrés dans la mise en place d’une enquête</li>
+								<li>Comprendre les intérêts de la data visualisation et de l’infographie</li>
+								<li>Identifier l’importance de contextualiser ses données</li>
+							</ul>
+							<p> <br> </p>
+							<div class="location">
+							  <i class="fa fa-map-marker" aria-hidden="true"></i>
+							  <p> <i> IUT Paris - Rives de Seine, Paris 16ème <br> Octobre 2022 - Janvier 2023 </i> </p>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-success" onclick="window.open('SAE Enquête (Statuts).pdf', '_blank');"> <i> Rapport Final </i> </button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="modal fade" id="staticBackdrop1.2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Projet : "Description et prévision d'une série temporelle" </b> </h1>
+							<button type="button" class="btn btn-close" data-bs-toggle="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body" style="text-align: justify; margin: 25px 50px;">
+							<!-- Contenu du modal -->
+							<p> <b> Contextualisation : </b> </p>
+							<p> L'Agence d'Information sur l'Énergie (EIA) des États-Unis joue un rôle crucial dans le système statistique fédéral du pays.
+							Son objectif est de collecter, d'analyser et de diffuser des informations sur l'énergie afin de soutenir l'élaboration de politiques éclairées,
+							de favoriser des marchés efficaces et d'améliorer la compréhension publique des enjeux énergétiques et de leurs interactions avec l'économie et l'environnement.
+							Les programmes de l'EIA couvrent un large éventail de données, notamment le charbon, le pétrole, le gaz naturel, l'électricité, les énergies renouvelables et l'énergie nucléaire.
+							En tant qu'entité du Département Américain de l'Énergie, l'EIA fournit un accès à de nombreuses séries chronologiques, dont celles décrivant la production d'électricité entre 2001 et 2022,
+							couvrant ainsi 22 années complètes d'observations. Ces données mensuelles sont ventilées par type de production d'électricité, notamment le charbon, les liquides de pétrole,
+							le coke de pétrole, le gaz naturel, les autres gaz, le nucléaire, l'hydroélectrique classique, l'éolien, le solaire à grande échelle, la géothermie et la biomasse.
+							Notre mission spécifique était d'étudier la série temporelle concernant la production d'énergie solaire à grande échelle sur cette période. 
+							Pour accomplir cette tâche, notre approche impliquait la décomposition de la série en composantes additive ou multiplicative, l'analyse de la tendance,
+							le calcul des coefficients saisonniers pour ajuster la série aux variations saisonnières. Ensuite, nous avons procédé à des prévisions pour l'année N+1 en utilisant diverses méthodes,
+							ainsi que pour une année antérieure afin de valider la fiabilité de nos méthodes. </p>
+							<p> <br> </p>
+							<p> <b> Défis et Difficultés : </b> </p>
+							<p> Ce projet a été confronté à un défi majeur.
+							Notre série de données était particulièrement complexe et au fur et à mesure de notre avancement, nous avons rencontré des résultats troublants.
+							Cela nous a conduit à remettre en question l'intégralité de notre travail, suspectant de graves erreurs. Cette situation nous a fait perdre un temps précieux,
+							nous obligeant à revenir en arrière à plusieurs reprises. Il est évident que nous aurions dû mieux nous préparer avant de commencer notre analyse.
+							En conséquence, nous avons décidé de revoir notre approche pour organiser plus efficacement les différentes étapes de notre travail et progresser de manière plus sûre et plus efficace. </p>
+							<p> <br> </p>
+							<p> <b> Apprentissages Critiques : </b> </p>
+							<ul>
+								<li>Saisir l’intérêt de mobiliser de manière proactive des ressources métiers liées à l'environnement (y compris économique, international…)</li>
+								<li>Prendre conscience de la rigueur requise dans ses productions et dans la communication à leur propos</li>
+								<li>Saisir la nécessité de choisir des indicateurs pertinents pour communiquer sur les résultats</li>
+								<li>Prendre conscience de la différence entre modélisation statistique et analyse exploratoire</li>
+								<li>Apprécier les limites de validité et les conditions d’application d’une analyse</li>
+								<li>Saisir la spécificité de l’analyse des données temporelles</li>
+								<li>Savoir défendre ses choix d’analyses</li>
+							</ul>
+							<p> <br> </p>
+							<div class="location">
+							  <i class="fa fa-map-marker" aria-hidden="true"></i>
+							  <p> <i> IUT Paris - Rives de Seine, Paris 16ème <br> Septembre 2023 - Janvier 2024 </i> </p>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-success" onclick="window.open('SAE_Séries_Temporelles_TIVRIER_BELAID.pdf', '_blank');"> <i> Rapport Final </i> </button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="modal fade" id="staticBackdrop1.3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Projet : "Intégration de données dans un datawarehouse" </b> </h1>
+							<button type="button" class="btn btn-close" data-bs-toggle="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body" style="text-align: justify; margin: 25px 50px;">
+							<!-- Contenu du modal -->
+							<p> <b> Contextualisation : </b> </p>
+							<p> Nil, une entreprise française spécialisée dans le e-commerce de livres, se distingue par sa passion pour la lecture et son innovation technologique.
+							Sollicités par cette société, nous avons mis en place un système d'analyse approfondie du comportement des utilisateurs sur leur plateforme.
+							Cette initiative a pour but de fournir des indicateurs pertinents sur la navigation des clients, les pages et catégories les plus consultées,
+							le détail des commandes et des livraisons, ainsi que les taux de conversion. L'objectif est d'optimiser l'expérience client et de prendre des décisions
+							éclairées pour soutenir la croissance continue de l'entreprise dans le secteur du e-commerce de livres.
+							Pour ce projet, nous avons développé un code informatique sous RStudio, comprenant plusieurs livrables pour créer un data warehouse et y insérer des données.
+							Cela nous a permis de répondre à diverses interrogations via des requêtes SQL. Nous avons également conçu une maquette de reporting à utiliser de manière hebdomadaire
+							pour assurer un suivi et un historique de tous les KPI clés essentiels au développement du site. Enfin, nous avons rédigé un rapport détaillant chaque étape de notre travail. </p>
+							<p> <br> </p>
+							<p> <b> Défis et Difficultés : </b> </p>
+							<p> Nous n'avons pas rencontré de véritables difficultés pour entreprendre ce projet, le plus difficile a été de réfléchir aux choix pertinents à retenir pour faire progresser nos travaux.
+							La conception du modèle conceptuel de données (MCD) a représenté une épreuve majeure, car il fallait créer une structure cohérente et extensible
+							qui puisse répondre à tous les besoins de l'analyse tout en étant suffisamment flexible pour intégrer de nouvelles sources de données à l'avenir.
+							Par ailleurs, l'analyse du comportement des utilisateurs a nécessité une compréhension approfondie des métriques pertinentes et la capacité de traduire ces analyses
+							en recommandations concrètes pour améliorer l'expérience client. Enfin, la conception de la maquette de reporting hebdomadaire a demandé une attention particulière aux
+							détails pour s'assurer que tous les KPI clés soient bien représentés et facilement interprétables par l'équipe de Nil. Ce projet m'a permis de développer des compétences
+							précieuses en gestion de données, en analyse et en communication, malgré les nombreux défis rencontrés. </p>
+							<p> <br> </p>
+							<p> <b> Apprentissages Critiques : </b> </p>
+							<ul>
+								<li>Prendre conscience de la rigueur requise dans ses productions et dans la communication à leur propos</li>
+								<li>Identifier et résoudre les problèmes d’intégration de sources complémentaires et hétérogènes</li>
+								<li>Saisir la nécessité de choisir des indicateurs pertinents pour communiquer sur les résultats</li>
+								<li>Réaliser le rôle central et spécifique de l'entrepôt de données dans la chaine décisionnelle</li>
+								<li>Comprendre la nécessité de tester, corriger et documenter un programme</li>
+								<li>Apprécier l’intérêt de briques logicielles existantes et savoir les utiliser</li>
+								<li>Comprendre l'organisation des données de l'entreprise</li>
+							</ul>
+							<p> <br> </p>
+							<div class="location">
+							  <i class="fa fa-map-marker" aria-hidden="true"></i>
+							  <p> <i> IUT Paris - Rives de Seine, Paris 16ème <br> Décembre 2023 - Janvier 2024 </i> </p>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-success" onclick="window.open('SAE INTEGRATION DE DONNEES.pdf', '_blank');"> <i> Rapport Final </i> </button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="modal fade" id="staticBackdrop1.4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Projet : "Migration d’une base de données SQLite vers NoSQL" </b> </h1>
+							<button type="button" class="btn btn-close" data-bs-toggle="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body" style="text-align: justify; margin: 25px 50px;">
+							<!-- Contenu du modal -->
+							<p> <b> Contextualisation : </b> </p>
+							<p> Paula Dupont, directrice d’une entreprise spécialisée dans l’automobile, est confrontée à plusieurs défis impactant la performance et la fiabilité de sa base
+							de données. Parmi les problématiques identifiées, une latence élevée des requêtes ainsi que des pertes de données dues à des défaillances serveurs récurrentes
+							figurent parmi les plus critiques. Afin d’améliorer la scalabilité, la rapidité des requêtes et la tolérance aux pannes, elle souhaite adopter une solution NoSQL.
+							Dans ce cadre, nous avons mis en place un processus de migration efficace de la base de données existante, “ClassicModel”, initialement sous SQLite, vers une
+							infrastructure NoSQL optimisée. Pour ce projet, nous avons d’abord conçu des requêtes SQL afin d’extraire les données nécessaires tout en garantissant leur intégrité.
+							Ensuite, nous avons réfléchi à la structure des données dans le nouveau format NoSQL afin d’assurer une organisation adaptée aux besoins de l’entreprise. Nous avons
+							également développé un algorithme en Python permettant d’automatiser l’ensemble du processus de migration, de la connexion aux bases de données à l’insertion des
+							données dans l’environnement NoSQL. Enfin, des requêtes ont été créées dans le nouveau format NoSQL afin de valider la bonne transmission et l’exactitude des données
+							migrées. </p>
+							<p> <br> </p>
+							<p> <b> Défis et Difficultés : </b> </p>
+							<p> Ce projet a nécessité de suivre un ensemble d’étapes majeures, exécutées méthodiquement et dans un ordre précis. Chaque phase devait être réalisée avec rigueur,
+							sans précipitation, car il était impossible d’en sauter une sans compromettre la migration. Cette transition demandait une maîtrise avancée des outils et langages
+							de programmation, combinant SQL, Python, NoSQL et MongoDB. Ayant déjà une bonne familiarité avec SQL et Python, l’intégration de MongoDB s’est révélée être un défi.
+							La découverte du logiciel et sa configuration ont été particulièrement difficiles. Le choix du bon modèle de données NoSQL a constitué l’un des plus grands enjeux
+							du projet. Chaque modèle ayant ses spécificités, nous avons longuement réfléchi à la meilleure approche, conscients que toute erreur d’orientation pourrait nous
+							faire perdre un temps précieux et nous obliger à repartir de zéro. Pour éviter cela, nous avons mené une analyse approfondie des avantages et inconvénients de
+							chaque modèle avant d’opter pour la solution la plus adaptée à notre problématique. L’écriture des requêtes NoSQL a également représenté un défi de taille.
+							Contrairement à SQL, où nous avions une solide expérience, nous étions novices en NoSQL, ce qui a rendu la création des requêtes plus longue et plus complexe.
+							Face aux difficultés rencontrées, nous nous sommes appuyés sur les requêtes SQL existantes pour déterminer les résultats attendus. Cela nous a permis de progresser
+							progressivement, en construisant les requêtes NoSQL étape par étape jusqu’à obtenir les résultats escomptés. Ce projet a été une véritable montée en compétences,
+							alliant adaptation, rigueur et persévérance pour surmonter les défis liés à la migration vers une base NoSQL performante et optimisée. </p>
+							<p> <br> </p>
+							<p> <b> Apprentissages Critiques : </b> </p>
+							<ul>
+								<li>Prendre conscience de la nécessité d’intégrer la vision de l’interlocuteur (transversalité, international, multiculture, niveau d’expertise…)</li>
+								<li>Mesurer l’importance de comprendre et de répondre à l'ensemble des problématiques posées</li>
+								<li>Identifier les solutions technologiques permettant la collecte et la diffusion de données</li>
+								<li>Identifier les clés d'une bonne communication (procédures et techniques utilisées)</li>
+								<li>Comprendre les spécificités des données complexes et de leur exploitation</li>
+								<li>Savoir mener une veille technologique</li>
+								<li>Être force de proposition</li>
+							</ul>
+							<p> <br> </p>
+							<div class="location">
+							  <i class="fa fa-map-marker" aria-hidden="true"></i>
+							  <p> <i> IUT Paris - Rives de Seine, Paris 16ème <br> Septembre 2024 - Novembre 2024 </i> </p>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-success" onclick="window.open('https://github.com/HWPlo/sae-nosql', '_blank');"> <i> Lien GitHub </i> </button>
+							<button type="button" class="btn btn-success" onclick="window.open('SAE - Rapport TIVRIER_LO.pdf', '_blank');"> <i> Rapport Final </i> </button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+
+
+			<button type="button" class="block2 btn btn-primary2" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+				<h5> Professionnels </h5>
+				<p> - </p>
+				<p> <i> "Direction Générale de l'Administration et de <br> la Fonction Publique" </i> </p>
+			</button>
+
+			<!-- Modal 2 -->
+			<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Direction Générale de l'Administration et de la Fonction Publique </b> </h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div id="carouselExampleDark2" class="carousel carousel-dark slide">
+							<div class="carousel-indicators">
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+							</div>
+							<div class="carousel-inner" style="margin: 30px 0px 100px 0px;">
+								<!-- Contenu du carrousel -->
+								<div class="carousel-item active" data-bs-toggle="modal" data-bs-target="#staticBackdrop2.1">
+									<p style="margin-bottom: 25px;"> <b> Projet N°1 : <br> </b> <i> "Mise en forme d'une base de données sociales" </i> </p>
+									<img src="image/bds.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+								<div class="carousel-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop2.2">
+									<p style="margin-bottom: 25px;"> <b> Projet N°2 : <br> </b> <i> "Transformation de l'enquête formation" </i> </p>
+									<img src="image/formation.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+								<div class="carousel-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop2.3">
+									<p style="margin-bottom: 25px;"> <b> Projet N°3 : <br> </b> <i> "Datavisualisation sur l'enquête recrutement" </i> </p>
+									<img src="image/dataviz.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+								<div class="carousel-item">
+									<p style="margin-bottom: 25px;"> <b> Projet N°X : <br> </b> <i> "Détails du projet prochainement" </i> </p>
+									<img src="image/non.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="modal fade" id="staticBackdrop2.1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Projet : "Mise en forme d'une base de données sociales" </b> </h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body" style="text-align: justify; margin: 25px 50px;">
+							<!-- Contenu du modal -->
+							<p> <b> Contextualisation : </b> </p>
+							<p> Au sein de la DGAFP, notre mission principale est d'harmoniser la gestion des ressources humaines dans l'administration publique,
+							en travaillant en étroite collaboration avec les ministères et les collectivités territoriales.
+							Chaque année, nous recevons un rapport exhaustif sur les effectifs des employés par ministère, établi à partir de notre base de données sociales.
+							Cette base de données comprend une variété d'indicateurs couvrant différents critères tels que les données personnelles, professionnelles, de santé,
+							de rémunération, etc. Ces indicateurs peuvent être ventilés de manière individuelle ou croisés entre eux, et sont identifiés par des codes et des libellés spécifiques.
+							Cependant, nous sommes confrontés à un défi majeur : les formats de données variés provenant de chaque ministère compliquent leur exploitation.
+							Afin de résoudre ce problème, nous avons initié un projet visant à développer un programme informatique capable de convertir ces divers formats en un fichier Excel standardisé.
+							Ce fichier présente de manière méticuleuse les informations requises, facilitant ainsi leur utilisation par nos collègues au sein des ministères.
+							Pour mener à bien ce projet, nous utilisons des outils tels qu'Excel, où le document original décrivant la base de données sociale est présenté,
+							ainsi que RStudio pour développer le code informatique nécessaire à la transformation des données. Le résultat final est un fichier Excel structuré,
+							prêt à être utilisé par nos partenaires intra-ministériels. </p>
+							<p> <br> </p>
+							<p> <b> Défis et Difficultés : </b> </p>
+							<p> Les premiers pas sur ce projet ont été parsemés de défis. Au départ, je me trouvais face à des données inconnues et une connaissance limitée de la fonction publique.
+							Pour pallier cela, j'ai entamé des discussions approfondies avec mes nouveaux collègues, posant un grand nombre de questions et affichant un intérêt marqué ainsi qu'une curiosité insatiable.
+							Cette démarche m'a permis d'acquérir rapidement une compréhension du sujet.
+							Le développement du programme informatique s'est avéré être un processus laborieux. La complexité résidait notamment dans la gestion des données ventilées ou croisées,
+							ajoutant une couche de difficulté supplémentaire, surtout lorsqu'une erreur survenait dans le code. Dans de telles situations, il était impératif de prendre du recul,
+							de réfléchir à la structure du programme et de procéder méthodiquement, étape par étape, sans précipitation.
+							De plus, des demandes d'ajouts de fonctionnalités intervenaient parfois en cours de développement, nécessitant une adaptation constante du code.
+							Cette réalité imposait une gestion minutieuse de la composition du code afin d'intégrer efficacement ces nouveaux éléments sans compromettre la stabilité du programme. </p>
+							<p> <br> </p>
+							<div class="location">
+							  <i class="fa fa-map-marker" aria-hidden="true"></i>
+							  <p> <i> 64 Allée de Bercy, Paris 12ème <br> Octobre 2023 - Janvier 2024 </i> </p>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-success" > <i> Preuve Gardée Confidentielle </i> </button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="modal fade" id="staticBackdrop2.2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Projet : "Transformation de l'enquête formation" </b> </h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body" style="text-align: justify; margin: 25px 50px;">
+							<!-- Contenu du modal -->
+							<p> <b> Contextualisation : </b> </p>
+							<p> La Direction générale de l’administration et de la fonction publique réalise, en collaboration avec les directions du personnel des ministères, des enquêtes
+							visant à compléter son système d’information sur les trois versants de la fonction publique, et plus particulièrement celui de la fonction publique de l’État (FPE).
+							L’enquête annuelle sur la formation dans la FPE permet d’établir un état des lieux détaillé des dispositifs de formation au sein des ministères, en recensant
+							notamment le nombre d’agents formés ainsi que le temps consacré à la formation. Cette analyse distingue les différents types d’actions de formation (statutaire
+							ou professionnelle, incluant la formation continue), et, pour cette dernière, elle précise le domaine et l’objectif de chaque formation. Les résultats sont ventilés
+							selon divers critères tels que le sexe, la catégorie hiérarchique, le statut et le ministère concerné. L’objectif de notre travail est de traiter ces données brutes
+							afin de les rendre exploitables sous forme de résumés analytiques, de publications et de visualisations interactives. Pour y parvenir, nous avons conçu plusieurs
+							programmes informatiques automatisés, capables de nettoyer, traiter et structurer les fichiers d’enquêtes reçus pour différentes années. Ces programmes permettent
+							ainsi d’assurer une restitution cohérente et standardisée des informations. Les fichiers d’enquêtes comprennent six tableaux distincts à renseigner. Pour leur
+							traitement, nous avons utilisé Excel, qui constitue l’outil initial de saisie des données par les ministères, ainsi que RStudio, où nous avons développé les scripts
+							d’automatisation. Ces scripts intègrent un menu interactif permettant de sélectionner le tableau souhaité à traiter. À l’issue du processus, un fichier Excel
+							final est généré, intégrant les données nettoyées et mises en forme, prêtes à être exploitées pour des analyses et présentations. </p>
+							<p> <br> </p>
+							<p> <b> Défis et Difficultés : </b> </p>
+							<p> Ce travail requiert une grande rigueur, car il présente à la fois des aspects simples et complexes. Il est simple dans le sens où, quelle que soit l’année ou
+							le ministère concerné, les six tableaux conservent une structure relativement stable. Ainsi, une fois le processus d’automatisation mis en place, il peut être
+							réutilisé pour les années suivantes ou facilement adapté en cas de besoin, ce qui constitue un avantage majeur. En revanche, la complexité réside dans le traitement
+							simultané de plusieurs tableaux sur une vingtaine de fichiers, nécessitant une réflexion approfondie sur la conception du code afin de garantir efficacité et
+							précision. Bien que chaque tableau apporte des informations spécifiques, leur architecture reste similaire. J’ai donc identifié ces éléments communs et développé
+							une fonction dédiée au nettoyage automatique des données en amont du traitement. Cette approche permet d’assurer une normalisation efficace dès le départ,
+							facilitant ainsi les étapes de traitement ultérieures. L’implémentation de cette fonction s’est révélée particulièrement bénéfique, car elle a permis d’accélérer
+							le développement du code en garantissant une application uniforme sur l’ensemble des tableaux. Un autre défi a été la gestion des erreurs présentes dans certains
+							fichiers. Bien que les fichiers soient normalisés par ministère et que les scripts soient automatisés, certaines incohérences sont apparues lors du traitement.
+							Parfois, des données essentielles manquaient, tandis que d’autres fichiers contenaient des lignes ou des colonnes supplémentaires, perturbant l’exécution du
+							programme, qui repose sur une structure fixe. Pour pallier ces problèmes, j’ai travaillé avec mes collègues afin de vérifier la présence des informations
+							indispensables, telles que les noms des ministères par exemple. J’ai également adapté le code pour anticiper d’éventuelles variations de format, notamment
+							en intégrant des contrôles permettant d’ignorer les colonnes excédentaires au-delà d’un certain seuil, assurant ainsi un traitement fluide et robuste. </p>
+							<p> <br> </p>
+							<div class="location">
+							  <i class="fa fa-map-marker" aria-hidden="true"></i>
+							  <p> <i> 64 Allée de Bercy, Paris 12ème <br> Avril 2024 - Octobre 2024 </i> </p>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-success" > <i> Preuve Gardée Confidentielle </i> </button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="modal fade" id="staticBackdrop2.3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Projet : "Datavisualisation sur l'enquête recrutement" </b> </h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body" style="text-align: justify; margin: 25px 50px;">
+							<!-- Contenu du modal -->
+							<p> <b> Contextualisation : </b> </p>
+							<p> L’enquête sur les recrutements et concours dans la fonction publique de l’État permet de recenser les postes offerts, le nombre de candidats présents, admis
+							et recrutés, en fonction de divers critères (sexe, catégorie hiérarchique, ministère, corps, etc.). L’analyse de ces données permet notamment d’évaluer les écarts
+							de sélectivité entre les différentes voies de concours ainsi que la représentation des femmes aux différentes étapes du processus de recrutement. Pour assurer
+							une restitution claire et synthétique de ces informations, nous avons conçu une série d’une dizaine de figures mettant en avant différentes dimensions des données.
+							Celles-ci prennent la forme de tableaux récapitulatifs, accompagnés, lorsque cela est pertinent, de graphiques illustrant l’évolution des données sur plusieurs
+							années. L’objectif principal est de garantir une mise à jour annuelle fluide (année n+1), en intégrant les nouvelles données dans les tableaux ou en actualisant
+							les graphiques. Cela est rendu possible grâce à un fichier Excel préalablement nettoyé, consolidant les données de l’année en cours, ainsi qu’un second fichier
+							regroupant les données des années précédentes pour assurer la continuité des graphiques. Les figures sont généralement présentées sous une vue d’ensemble, englobant
+							l’ensemble des ministères. Toutefois, certaines d’entre elles proposent un niveau de détail supplémentaire, permettant une analyse spécifique par ministère et/ou
+							par direction lorsque les données et le contexte le permettent. Pour ce faire, nous avons mis en place une méthodologie basée sur deux programmes informatiques
+							distincts pour chaque figure. Le premier, développé sous RStudio, assure le traitement des données et produit un tableau final mis en forme. Le second, conçu
+							avec RMarkdown, prend ce tableau en entrée et l’exporte au format HTML avec un visuel choisi et créé, facilitant ainsi la diffusion des résultats. Par ailleurs,
+							les figures détaillées par ministère et/ou direction bénéficient d’un code automatisé sous RStudio, permettant un export en série et garantissant un traitement
+							 systématique des différentes entités concernées. </p>
+							<p> <br> </p>
+							<p> <b> Défis et Difficultés : </b> </p>
+							<p> Pour la datavisualisation, j’ai accordé une attention particulière à la qualité visuelle de chaque figure. Bien que chaque figure reste simple, se limitant
+							à un tableau ou parfois à un graphique en complément, j’ai estimé que l’aspect esthétique constituait une réelle valeur ajoutée. Une mise en page soignée permet
+							en effet d’offrir une lecture plus fluide et agréable, facilitant ainsi la compréhension des données. La réalisation des figures n’a pas présenté de difficulté
+							majeure. J’ai choisi de structurer mon travail en séparant chaque figure dans un programme distinct, plutôt que de regrouper toutes les visualisations au sein
+							d’un même fichier. Cette approche m’a permis de simplifier les contrôles en cas d’erreur, d’éviter une surcharge du code et de faciliter la maintenance. Même
+							si cela a conduit à la création d’une vingtaine de programmes différents, cette organisation s’est révélée efficace pour retrouver rapidement un fichier en cas
+							de modification à apporter. Les principales difficultés ont concerné la compréhension des aspects métiers nécessaires à la construction des tableaux finaux. Il
+							n’était pas toujours évident de déterminer si toutes les informations essentielles avaient bien été prises en compte, ou au contraire si certaines lignes superflues
+							risquaient de fausser les résultats. Pour éviter ces erreurs, j’ai sollicité l’expertise de mes collègues plus expérimentés, ce qui m’a permis de vérifier mes
+							analyses et de garantir la fiabilité des figures produites. Cette collaboration a également permis d’anticiper d’éventuelles corrections et d’éviter l’envoi de
+							résultats erronés nécessitant une révision du travail. Bien que les erreurs puissent survenir, elles peuvent être minimisées en échangeant régulièrement avec
+							l’équipe. </p>
+							<p> <br> </p>
+							<div class="location">
+							  <i class="fa fa-map-marker" aria-hidden="true"></i>
+							  <p> <i> 64 Allée de Bercy, Paris 12ème <br> Novembre 2024 - Février 2025 </i> </p>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-success" > <i> Preuve Gardée Confidentielle </i> </button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+
+
+
+
+
+			<button type="button" class="block3 btn btn-primary3" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+				<h5> Universitaires </h5>
+				<p> - </p>
+				<p> <i> "BUT Science des <br> Données - Projets <br> de Parcours" </i> </p>
+			</button>
+
+			<!-- Modal 3 -->
+			<div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> BUT Science des Données - Projets de Parcours </b> </h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div id="carouselExampleDark3" class="carousel carousel-dark slide">
+							<div class="carousel-indicators">
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+							</div>
+							<div class="carousel-inner" style="margin: 30px 0px 100px 0px;">
+								<!-- Contenu du carrousel -->
+								<div class="carousel-item active" data-bs-toggle="modal" data-bs-target="#staticBackdrop3.1">
+									<p style="margin-bottom: 25px;"> <b> Projet N°1 (2ème Année) : <br> </b> <i> "Collecte automatisée de données web" </i> </p>
+									<img src="image/collecte.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+								<div class="carousel-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop3.2">
+									<p style="margin-bottom: 25px;"> <b> Projet N°2 (2ème Année) : <br> </b> <i> "Développement d'un composant d'une solution décisionnelle" </i> </p>
+									<img src="image/ratp.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+								<div class="carousel-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop3.3">
+									<p style="margin-bottom: 25px;"> <b> Projet N°3 (3ème Année) : <br> </b> <i> "Ingénierie logicielle appliquée au Titanic Survival Prediction" </i> </p>
+									<img src="image/titanic.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+								<div class="carousel-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop3.4">
+									<p style="margin-bottom: 25px;"> <b> Projet N°4 (3ème Année) : <br> </b> <i> "Analyse et conception d'un outil décisionnel pour la SNCF" </i> </p>
+									<img src="image/train.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+								<div class="carousel-item">
+									<p style="margin-bottom: 25px;"> <b> Projet N°X : <br> </b> <i> "Détails du projet prochainement" </i> </p>
+									<img src="image/non.png" class="d-block mx-auto border border-dark" alt="..." height="300px;" width="525px;">
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark3" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark3" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="modal fade" id="staticBackdrop3.1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Projet : "Collecte automatisée de données web" </b> </h1>
+							<button type="button" class="btn btn-close" data-bs-toggle="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body" style="text-align: justify; margin: 25px 50px;">
+							<!-- Contenu du modal -->
+							<p> <b> Contextualisation : </b> </p>
+							<p> À partir de deux bases de données sources regroupant des informations sur des millions d'entreprises et leurs établissements en France (base SIREN),
+							notre projet vise à enrichir ces fichiers par une collecte complémentaire via le web. Nous nous concentrons principalement sur les coordonnées géographiques,
+							les sites web ou encore les numéros de téléphone, récupérés grâce à une recherche Google Maps des établissements. Pour cela, nous avons développé un code Python complet pour nettoyer
+							et structurer les fichiers sources de manière optimale. Une fois les fichiers structurés, nous utilisons une API pour récupérer les coordonnées géographiques de chaque établissement
+							à partir des adresses récoltées. Python communique avec les services de Google Maps via cette API pour obtenir les informations nécessaires. Avec ces coordonnées,
+							nous générons des liens URL Google Maps pour chaque établissement, ce qui nous permet d'accéder aux informations complémentaires. Ce processus nous permet de fournir
+							une valeur ajoutée significative en enrichissant les données initiales. Pour ce projet, nous avons utilisé Jupyter, un éditeur de code Python, pour combiner code,
+							commentaires et résultats en un seul endroit.</p>
+							<p> <br> </p>
+							<p> <b> Défis et Difficultés : </b> </p>
+							<p> Ce projet a présenté des défis significatifs nécessitant des solutions rapides pour éviter des retards dans notre travail.
+							Les fichiers sources étaient si volumineux que Jupyter ne pouvait pas les importer en une seule fois. Nous avons donc trouvé un moyen de découper minutieusement
+							les documents pour les importer et les fusionner sans problèmes. Une attention particulière a été portée à notre découpage, car les limitations de mémoire de Jupyter rendaient
+							parfois l'exécution du code impossible, et une erreur de découpe retardait notre progression. Des problèmes de mise en forme des données ont également surgi, faussant les
+							résultats en cours de projet. Pour y remédier, nous avons mis en place des contrôles réguliers des sections de code afin de vérifier leur bon fonctionnement et de corriger les
+							étapes présentant des erreurs. </p>
+							<p> <br> </p>
+							<p> <b> Apprentissages Critiques : </b> </p>
+							<ul>
+								<li>Saisir l’intérêt de mobiliser de manière proactive des ressources métiers liées à l'environnement (y compris économique, international…)</li>
+								<li>Comprendre le rôle fondamental de l’analyse des besoins et de l’existant dans un projet décisionnel (architecture, visualisation...)</li>
+								<li>Prendre conscience des différences entre outils (logiciels, langages) pour choisir le plus adapté</li>
+								<li>Identifier et résoudre les problèmes d’intégration de sources complémentaires et hétérogènes</li>
+								<li>Percevoir les enjeux de l’automatisation et de l'interopérabilité d’un ensemble de tâches</li>
+								<li>Apprécier les limites de validité et les conditions d’application d’une analyse</li>
+								<li>Comprendre la nécessité de tester, corriger et documenter un programme</li>
+								<li>Apprécier l’intérêt de briques logicielles existantes et savoir les utiliser</li>
+								<li>Comprendre l'organisation des données de l'entreprise</li>
+								<li>Savoir défendre ses choix d’analyses</li>
+							</ul>
+							<p> <br> </p>
+							<div class="location">
+							  <i class="fa fa-map-marker" aria-hidden="true"></i>
+							  <p> <i> IUT Paris - Rives de Seine, Paris 16ème <br> Janvier 2024 - Mars 2024 </i> </p>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-success" onclick="window.open('CODE 40 LIGNES TIVRIER GAVREL COADOU.html', '_blank');"> <i> Code Python </i> </button>
+							<button type="button" class="btn btn-success" onclick="window.open('Rapport SAE Collecte Web TIVRIER-GAVREL-COADOU.pdf', '_blank');"> <i> Rapport Final </i> </button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="modal fade" id="staticBackdrop3.2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Projet : "Développement d'un composant d'une solution décisionnelle" </b> </h1>
+							<button type="button" class="btn btn-close" data-bs-toggle="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body" style="text-align: justify; margin: 25px 50px;">
+							<!-- Contenu du modal -->
+							<p> <b> Contextualisation : </b> </p>
+							<p> Le parcours VCOD du BUT Science des Données offre une formation spécialisée dans la conception et l'exploitation de solutions d'informatique décisionnelle.
+							Il vise à nous doter de compétences nécessaires pour développer et utiliser des outils décisionnels en intégrant des processus d'automatisation.
+							Ce faisant, nous sommes capables de convertir les données brutes en informations exploitables pour soutenir efficacement la prise de décision. Dans le cadre de ce parcours,
+							nous sommes également confrontés à des projets concrets qui nous permettent d'appliquer nos connaissances dans des domaines spécifiques.
+							Par exemple, un projet récent dont nous avons sélectionné le thème a porté sur la conception d'un outil décisionnel dédié aux transports en commun en Île-de-France.
+							Utilisant RShiny, nous avons développé une application dynamique et interactive, en recueillant nous-mêmes les bases de données et les informations nécessaires à son élaboration.
+							Ce projet a abordé plusieurs aspects, notamment l'analyse historique des données, les statistiques sur la fréquentation des transports en commun,
+							ainsi que l'utilisation d'API pour calculer les informations sur le trafic et les trajets en Île-de-France. En mettant en œuvre ces compétences,
+							nous avons pu non seulement acquérir une expérience pratique précieuse, mais aussi démontrer notre capacité à visualiser et à communiquer efficacement les résultats de nos analyses. </p>
+							<p> <br> </p>
+							<p> <b> Défis et Difficultés : </b> </p>
+							<p> Ce projet a présenté des difficultés inattendues. Responsable de la partie statistique, j'ai rencontré des problèmes au fur et à mesure de mon avancement.
+							Tout d'abord, il m'a fallu trouver moi-même une base de données pertinente. Seules les données du métro étaient quasiment complètes, ce qui m'a contraint à abandonner
+							l'étude du trafic des autres transports en commun d'Île-de-France.
+							J'ai dû chercher plusieurs bases de données pour obtenir les informations que je souhaitais inclure. Regrouper ces bases en une seule s'est révélé parfois impossible en raison
+							de l'absence de clés de jointure. J'ai donc dû trouver des solutions pour combiner les bases avec des clés de jointure créées et gérer manuellement les autres données non fusionnables pour les faire correspondre au reste.
+							Une autre difficulté concernait l'association des filtres et des éléments graphiques. Par exemple, il fallait que je fasse correspondre les lignes de métro à leur couleur attribuée tout en appliquant un filtre dynamique
+							basé sur la sélection des utilisateurs. Cette tâche s'est avérée plutôt complexe.
+							Sachant que cela allait être compliqué, car c'était la première fois que je travaillais sur un code intégrant plusieurs facteurs dynamiques,
+							j'ai pris le temps de bien structurer les étapes de mon code et de les vérifier régulièrement pour m'assurer qu'aucune d'elles ne modifiait le contenu précédent. </p>
+							<p> <br> </p>
+							<p> <b> Apprentissages Critiques : </b> </p>
+							<ul>
+								<li>Saisir l’intérêt de mobiliser de manière proactive des ressources métiers liées à l'environnement (y compris économique, international…)</li>
+								<li>Comprendre le rôle fondamental de l’analyse des besoins et de l’existant dans un projet décisionnel (architecture, visualisation...)</li>
+								<li>Prendre conscience de la rigueur requise dans ses productions et dans la communication à leur propos</li>
+								<li>Prendre conscience des différences entre outils (logiciels, langages) pour choisir le plus adapté</li>
+								<li>Identifier et résoudre les problèmes d’intégration de sources complémentaires et hétérogènes</li>
+								<li>Saisir la nécessité de choisir des indicateurs pertinents pour communiquer sur les résultats</li>
+								<li>Réaliser le rôle central et spécifique de l'entrepôt de données dans la chaine décisionnelle</li>
+								<li>Percevoir les enjeux de l’automatisation et de l'interopérabilité d’un ensemble de tâches</li>
+								<li>Comprendre la nécessité de tester, corriger et documenter un programme</li>
+								<li>Apprécier l’intérêt de briques logicielles existantes et savoir les utiliser</li>
+								<li>Comprendre l'organisation des données de l'entreprise</li>
+								<li>Comprendre le cycle de vie d’un projet informatique</li>
+								<li>Savoir défendre ses choix d’analyses</li>
+							</ul>
+							<p> <br> </p>
+							<div class="location">
+							  <i class="fa fa-map-marker" aria-hidden="true"></i>
+							  <p> <i> IUT Paris - Rives de Seine, Paris 16ème <br> Mars 2024 - Juin 2024 </i> </p>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-success" onclick="window.open('shiny1.png', '_blank');"> <i> Image RShiny </i> </button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+			
+			
+			<div class="modal fade" id="staticBackdrop3.3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Projet : "Ingénierie logicielle appliquée au Titanic Survival Prediction" </b> </h1>
+							<button type="button" class="btn btn-close" data-bs-toggle="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body" style="text-align: justify; margin: 25px 50px;">
+							<!-- Contenu du modal -->
+							<p> <b> Contextualisation : </b> </p>
+							<p> Dans le cadre du parcours VCOD, nous sommes amenés à davantage consolider nos compétences informatiques, ce qui inclut l’étude et l'application des principes
+							de l’ingénierie logicielle. Ainsi, ce projet a consisté à transformer un notebook Python existant, issu du célèbre challenge Titanic Survival Prediction sur
+							Kaggle, en un ensemble de scripts modulaires et réutilisables. L’objectif était d’optimiser la structuration du code tout en appliquant les bonnes pratiques
+							de l’ingénierie logicielle. Les premières étapes ont concerné le nettoyage et la préparation des données, avec un traitement des valeurs manquantes et un
+							encodage des variables adapté. Une analyse exploratoire a ensuite permis d’identifier les tendances et corrélations au sein du dataset. Sur cette base,
+							plusieurs modèles de Machine Learning ont été implémentés afin de prédire les probabilités de survie des passagers du Titanic, avec une optimisation des
+							hyperparamètres et une évaluation des performances. Pour assurer la maintenabilité et la robustesse du projet, nous avons mis en place des tests unitaires,
+							accompagnés du respect des conventions PEP8 pour avoir un code propre et lisible. La gestion du projet a reposé sur Git et GitHub, facilitant le suivi des
+							contributions et la collaboration. De plus, nous avons configuré un pipeline CI/CD via GitHub Actions afin d’automatiser les tests, le linting et, potentiellement,
+							le déploiement. L’ingénierie logicielle dans ce projet permet d'assurer un code structuré, maintenable et évolutif, des compétences essentielles dans un
+							environnement professionnel, où la qualité, la collaboration et l'efficacité sont cruciales pour livrer des projets fiables et évolutifs. </p>
+							<p> <br> </p>
+							<p> <b> Défis et Difficultés : </b> </p>
+							<p> Ce projet a été l’un des plus courts en termes de rendu, mais il comportait de nombreuses étapes à suivre, ce qui nous a rapidement mis sous pression.
+							Nous avons été confrontés à la difficulté de répartir efficacement le travail tout en collaborant de manière cohérente, un véritable défi compte tenu de
+							l’enchaînement logique des différentes tâches. Pour optimiser notre organisation, nous avons choisi de travailler individuellement sur les parties jugées pouvant
+							être réalisées en autonomie, tout en réservant les étapes nécessitant une réflexion collective, comme la prise en main des données et la rédaction du README,
+							pour un travail en groupe. Afin d’assurer une bonne cohésion et une compréhension globale du projet, nous avons également mis en place des vérifications des
+							parties individuelles, permettant ainsi à chaque membre de prendre connaissance du travail des autres et de mieux s’aligner sur les tâches collaboratives.
+							Pour ma part, j’ai pris en charge la première phase réalisable en autonomie, une responsabilité exigeante qui s’est révélée être un élément clé du projet.
+							En effet, chaque partie étant liée à la suivante, il était crucial d’assurer la fiabilité et la précision des résultats produits afin de ne pas compromettre
+							l’ensemble du travail. J’ai donc porté une attention particulière à la rigueur de mon code avant de transmettre le relais aux autres membres de l’équipe.
+							Ce projet nous a permis de développer à la fois des compétences en gestion de projet en équipe et une réelle autonomie dans l’exécution des tâches,
+							renforçant ainsi des soft skills essentiels dans un environnement professionnel. </p>
+							<p> <br> </p>
+							<p> <b> Apprentissages Critiques : </b> </p>
+							<ul>
+								<li>Réaliser l’intérêt d’appliquer les méthodes de développement dans la réalisation d’un projet informatique</li>
+								<li>Apprécier l’intérêt de l’utilisation d’un gestionnaire de versions de code</li>
+								<li>Défendre ses choix de solution par un argumentaire éclairé</li>
+							</ul>
+							<p> <br> </p>
+							<div class="location">
+							  <i class="fa fa-map-marker" aria-hidden="true"></i>
+							  <p> <i> IUT Paris - Rives de Seine, Paris 16ème <br> Janvier 2025 </i> </p>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-success" onclick="window.open('https://github.com/patesrick/Projet-developpement', '_blank');"> <i> Lien GitHub </i> </button>
+							<button type="button" class="btn btn-success" onclick="window.open('rapport_devlog.pdf', '_blank');"> <i> Rapport Final </i> </button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="modal fade" id="staticBackdrop3.4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel"> <b> Projet : "Analyse et conception d'un outil décisionnel pour la SNCF" </b> </h1>
+							<button type="button" class="btn btn-close" data-bs-toggle="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body" style="text-align: justify; margin: 25px 50px;">
+							<!-- Contenu du modal -->
+							<p> <b> Contextualisation : </b> </p>
+							<p> Après la réalisation de notre premier outil décisionnel l’année passée, les exigences et la complexité du travail se sont accrues. Dans ce projet,
+							nous répondons à une commande formulée par la SNCF, qui nous laisse une liberté totale sur  l’application à développer. Toutefois, celle-ci doit s’inscrire
+							dans une problématique définie autour d’axes ciblés au préalable, à savoir l’écologie et l’incitation aux modes de transport doux. L’objectif de ce projet
+							est de concevoir une architecture logicielle, de spécifier les fonctionnalités de l’outil et de proposer des interfaces de visualisation des données restituées.
+							Pour cela, nous avons décidé de développer une interface permettant aux utilisateurs de saisir une adresse de départ et d’arrivée, afin d’afficher les différents
+							modes de transport disponibles à proximité (train, vélo, bus, etc.), avec la possibilité d’ajuster un rayon de recherche autour du point sélectionné. L’outil
+							fournit également des informations complémentaires telles que le temps et la distance entre les deux adresses selon différents moyens de transport, la qualité
+							de l’air aux alentours pour encourager la marche, ainsi que des graphiques comparatifs. Ces derniers permettent d’analyser des indicateurs clés comme les
+							émissions de CO2 selon le mode de transport, les dépenses énergétiques par type d’activité ou encore la disponibilité des infrastructures de mobilité douce
+							(gares, stationnements vélo, arrêts de bus). En donnant aux utilisateurs une meilleure visibilité sur les alternatives de transport durable à proximité, cet
+							outil vise à favoriser des choix plus respectueux de l’environnement et à encourager la réduction de l’empreinte carbone individuelle. </p>
+							<p> <br> </p>
+							<p> <b> Défis et Difficultés : </b> </p>
+							<p> Qui dit carte blanche, dit liberté dans le choix de la problématique et dans la conception de l’application. Cependant, cette phase s’est révélée être l’une
+							des plus complexes du projet. Initialement, nous avions envisagé une problématique simple, accompagnée d’une application fonctionnant comme un calculateur
+							d’itinéraire. L’idée était de proposer deux trajets : l’un classique, potentiellement plus polluant, et l’autre intégrant au moins un mode de transport doux
+							afin d’inciter l’usager à privilégier des alternatives plus écologiques. Toutefois, nous avons rapidement réalisé que cette approche serait trop complexe à
+							mettre en œuvre compte tenu de nos contraintes, nous conduisant ainsi à revoir notre stratégie. L’un des principaux défis a été de trouver une problématique
+							pertinente et réalisable. À plusieurs reprises, nous avons identifié des idées intéressantes, mais leur mise en application s’avérait techniquement trop
+							ambitieuse ou insuffisamment impactante. Cette hésitation nous a fait perdre un temps précieux et a considérablement retardé l’avancement du projet, nous
+							mettant sous pression à l’approche de la deadline. Il est donc essentiel de bien prendre le temps de réfléchir à une problématique pertinente et à la conception
+							d’une application dont la complexité reste adaptée aux compétences et aux contraintes d’étudiants. Par ailleurs, notre approche impliquant des calculs sur
+							plusieurs rayons autour de deux points d’intérêt a soulevé des défis techniques. Il a fallu établir des correspondances précises entre les adresses saisies
+							et les coordonnées géographiques des différents modes de transport doux, ce qui s’est avéré complexe. Pour surmonter cette difficulté, nous avons exploité
+							des documentations et utilisé des packages spécifiques en R facilitant ces calculs. Enfin, un autre enjeu majeur a été le choix des informations à afficher
+							dans l’application. Trop de données risquaient de surcharger l’interface et de nuire à l’expérience utilisateur. Nous avons donc longuement réfléchi à la 
+							pertinence et à l’impact de chaque donnée afin de ne conserver que celles apportant une réelle valeur ajoutée à l’outil. </p>
+							<p> <br> </p>
+							<p> <b> Apprentissages Critiques : </b> </p>
+							<ul>
+								<li>Saisir l’importance de la mise en œuvre de méthodes  adaptées à des domaines et des données spécifiques (Marketing, Biostatistique, Statistique spatiale, Gestion …)</li>
+								<li>Prendre conscience de la nécessité d’intégrer la vision de l’interlocuteur (transversalité, international, multiculture, niveau d’expertise…)</li>
+								<li>Prendre conscience de la nécessité d’utiliser des moyens spécifiques pour exploiter les Big Data ou les flux de données</li>
+								<li>Savoir transformer la donnée pour la mettre en conformité avec des normes (anonymisation, normalisation)</li>
+								<li>Réaliser l’intérêt d’appliquer les méthodes de développement dans la réalisation d’un projet informatique</li>
+								<li>Mesurer l’importance de comprendre et de répondre à l'ensemble des problématiques posées</li>
+								<li>Identifier les solutions technologiques permettant la collecte et la diffusion de données</li>
+								<li>Identifier les clés d'une bonne communication (procédures et techniques utilisées)</li>
+								<li>Mesurer l'impact d'un respect de la législation en terme de droit des données</li>
+								<li>Comprendre les spécificités des données complexes et de leur exploitation</li>
+								<li>Défendre ses choix de solution par un argumentaire éclairé</li>
+								<li>Savoir mener une veille technologique</li>
+								<li>Être force de proposition</li>
+							</ul>
+							<p> <br> </p>
+							<div class="location">
+							  <i class="fa fa-map-marker" aria-hidden="true"></i>
+							  <p> <i> IUT Paris - Rives de Seine, Paris 16ème <br> Novembre 2024 - Janvier 2025 </i> </p>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-success" onclick="window.open('sncf.png', '_blank');"> <i> Image RShiny (1/2) </i> </button>
+							<button type="button" class="btn btn-success" onclick="window.open('sncf2.png', '_blank');"> <i> Image RShiny (2/2) </i> </button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		
+		<img src="image/fleur1.png" alt="Fleur" class="fleur1">
+		
+		<img src="image/fleur2.png" alt="Fleur" class="fleur2">
+
+		<div class="horizontal-line">
+		</div>
+
+		<div class="diagramme">
+			<img src="image/diagramme_pu.png" alt="Diagramme" class="diagramme">
+		</div>
+	
+	
+	</body>
+</html>
